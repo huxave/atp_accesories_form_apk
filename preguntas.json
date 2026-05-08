@@ -1,23 +1,23 @@
 [
    {
-      "pregunta": "Vas a comprar o vender un vehículo ¿Qué y cuánto tengo que pagar en ATP?",
-      "respuesta": "Tenés que pagar el 50% del valor del bien según la tabla de valuación vigente.",
-      "fuente": "Código Tributario - Ley 123-F"
+      "pregunta": "¿Qué y cuanto se abona en los puestos de control al ingresar?",
+      "respuesta": "En caso de ingreso, se evalúa la condición fiscal del contribuyente para verificar si están inscripto en el tributo y régimen que corresponde. De acuerdo a ello, si el destinatario de las mercaderías no esta inscripto (o inscripto en Convenio multilateral pero con situación fiscal irregular - deuda) es pasible de aplicación de un 3%. Si esta inscripto en el régimen Convenio Multilateral sin deudas y con alta en la provincia, no abona.",
+      "fuente": "Resol Gral N° 025/2006"
    },
 {
-      "pregunta": "Vas a sellar un contrato ¿Qué y cuánto tengo que pagar en ATP?",
-      "respuesta": "Tenés que pagar el 1% del valor del instrumento.",
-      "fuente": "Código Tributario - Ley 123-F"
+      "pregunta": "¿Como es el trámite del sellado de instrumentos?",
+      "respuesta": "Dependiendo del tipo de instrumento como ser Contratos, Orden de provisión, Orden de compra, etc. el trámite del sellado se puede llevar a cabo de dos maneras. Una de forma presencial, asisitiendo el contribuyente con la documentación pertinente o, a través del portal de la ATP, ingresando con cuit y clave fiscal y posteriormente, al webservice Mis Trámites / Sellos Web.",
+      "fuente": "Resolución General - 06/2022"
    },
 {
-      "pregunta": "¿tengo que pagar patente en ATP?",
-      "respuesta": "Tenés que pagar el 1% del valor del instrumento.",
-      "fuente": "Código Tributario - Ley 123-F"
+      "pregunta": "_",
+      "respuesta": "_",
+      "fuente": "_"
    },
 
    {
-      "pregunta": "Traigo mercaderías para comercializar ¿Qué documentación debo presentar?",
-      "respuesta": "Debe contar con factura de origen, remito y estar inscripto en el padrón correspondiente.",
-      "fuente": "Resolución General ATP 2026"
+      "pregunta": "_",
+      "respuesta": "_",
+      "fuente": "_"
    }
 ]
