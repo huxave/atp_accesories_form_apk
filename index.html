@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Componente de Consultas</title>
+    <style>
+        /* Estilos del contenedor */
+        .faq-container {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        /* Estilo del botón (desplegable) */
+        details {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        /* Título y Subtítulo */
+        summary {
+            padding: 15px 20px;
+            cursor: pointer;
+            list-style: none; /* Quita la flecha por defecto */
+            display: flex;
+            flex-direction: column;
+            outline: none;
+            position: relative; /* Para posicionar el icono de forma precisa */
+        }
+
+        summary::-webkit-details-marker {
+            display: none; /* Compatibilidad para Safari */
+        }
+
+        summary:hover {
+            background-color: #f0f4f8;
+        }
+
+        .title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #003366; /* Azul institucional */
+            padding-right: 30px; /* Espacio para que el texto no pise el + */
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 4px;
+            padding-left: 5px; /* Alineación suave con el título */
+        }
+
+        /* El contenido "Child" */
+        .content {
+            padding: 15px 20px;
+            border-top: 1px solid #e0e0e0;
+            background-color: white;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Estilo para que la pregunta parezca un link */
+.enlace-pregunta {
+    color: #0056b3;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none; /* Quita el triángulo de nuevo */
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.enlace-pregunta:hover {
+    text-decoration: underline;
+    color: #003366;
+}
+
+/* Quitar la flecha específica de las preguntas internas */
+.pregunta-anidada summary::after {
+    content: "" !important; /* Eliminamos el + y - de las subpreguntas */
+}
+
+/* Espaciado de la respuesta */
+.respuesta-texto {
+    background-color: #f0f4f8;
+    padding: 10px 15px;
+    border-left: 3px solid #003366;
+    margin: 5px 0 10px 10px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.lista-respuestas li {
+    margin-bottom: 15px;
+}
+
+        /* Flecha indicadora personalizada */
+        summary::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            font-weight: lighter;
+            color: #003366;
+        }
+
+        details[open] summary::after {
+            content: '−';
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq-container">
+    <!-- El título del componente se mantiene -->
+    <details>
+        <summary>
+            <span class="title">Guía para el contribuyente</span>
+            <span class="subtitle">Lo que necesitas saber</span>
+        </summary>
+        <div class="content">
+            <p>Seleccione su consulta para ver la respuesta:</p>
+            
+            <!-- LISTA VACÍA: Aquí es donde el script "inyectará" las preguntas -->
+            <ul class="lista-respuestas"></ul>
+            
+        </div>
+    </details>
+</div>
+
+<!-- ... resto de tu código anterior ... -->
+
+    <script>
+        // Seleccionamos el lugar donde irán las preguntas
+        const contenedor = document.querySelector('.lista-respuestas');
+
+        // Función para cargar los datos
+        async function cargarPreguntas() {
+            try {
+                // Buscamos el archivo JSON (asegúrate que se llame exactamente así)
+                const respuesta = await fetch('preguntas.json');
+                const datos = await respuesta.json();
+
+                // Por cada objeto en el JSON, creamos el HTML
+                datos.forEach(item => {
+                    const li = document.createElement('li');
+                    li.style.marginBottom = "15px"; // Espaciado entre preguntas
+                    
+                    li.innerHTML = `
+                        <details class="pregunta-anidada">
+                            <summary class="enlace-pregunta" style="color: #0056b3; cursor: pointer; text-decoration: none;">
+                                ${item.pregunta}
+                            </summary>
+                            <div class="respuesta-texto" style="background: #f0f4f8; padding: 10px; border-left: 3px solid #003366; margin-top: 5px;">
+                                <p style="margin: 0;">${item.respuesta}</p>
+                                <small style="display:block; color:gray; margin-top:8px; font-style: italic;">
+                                    Fuente: ${item.fuente}
+                                </small>
+                            </div>
+                        </details>
+                    `;
+                    contenedor.appendChild(li);
+                });
+            } catch (error) {
+                console.error("Error cargando las preguntas:", error);
+                contenedor.innerHTML = "<li>Error al cargar la guía. Reintente más tarde.</li>";
+            }
+        }
+
+        // Ejecutamos la función
+        cargarPreguntas();
+    </script>
+</body>
+</html>

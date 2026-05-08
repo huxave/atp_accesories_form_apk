@@ -1,0 +1,23 @@
+[
+   {
+      "pregunta": "Vas a comprar o vender un vehículo ¿Qué y cuánto tengo que pagar en ATP?",
+      "respuesta": "Tenés que pagar el 50% del valor del bien según la tabla de valuación vigente.",
+      "fuente": "Código Tributario - Ley 123-F"
+   },
+{
+      "pregunta": "Vas a sellar un contrato ¿Qué y cuánto tengo que pagar en ATP?",
+      "respuesta": "Tenés que pagar el 1% del valor del instrumento.",
+      "fuente": "Código Tributario - Ley 123-F"
+   },
+{
+      "pregunta": "¿tengo que pagar patente en ATP?",
+      "respuesta": "Tenés que pagar el 1% del valor del instrumento.",
+      "fuente": "Código Tributario - Ley 123-F"
+   },
+
+   {
+      "pregunta": "Traigo mercaderías para comercializar ¿Qué documentación debo presentar?",
+      "respuesta": "Debe contar con factura de origen, remito y estar inscripto en el padrón correspondiente.",
+      "fuente": "Resolución General ATP 2026"
+   }
+]
