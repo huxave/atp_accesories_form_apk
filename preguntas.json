@@ -1,5 +1,11 @@
 [
-   {
+	{
+      "pregunta": "¿Qué son los Puestos de Control de ATP y cuantos hay?",
+      "respuesta": "Son oficinas públicas de esta Administración con funciones específicas para el registro y cobro de ingreso de mercaderias. En el Terrirotorio de la Provincia de Formosa hay 6: Puesto General Mansilla, Puesto Puente Libertad, Puesto Línea Barilari, Puesto Subtetniente Perín, Puesto Cañda 12 ramales Ruta Prov. 2 y Ruta Nac. 11 y, Puesto Clorinda Ruta 86_",
+      "fuente": "Código Fiscal 1.659"
+   },
+   
+{
       "pregunta": "¿Qué y cuanto se abona en los puestos de control al ingresar?",
       "respuesta": "En caso de ingreso, se evalúa la condición fiscal del contribuyente para verificar si están inscripto en el tributo y régimen que corresponde. De acuerdo a ello, si el destinatario de las mercaderías no esta inscripto (o inscripto en Convenio multilateral pero con situación fiscal irregular - deuda) es pasible de aplicación de un 3%. Si esta inscripto en el régimen Convenio Multilateral sin deudas y con alta en la provincia, no abona.",
       "fuente": "Resol Gral N° 025/2006"
@@ -16,26 +22,19 @@
    },
 {
       "pregunta": "¿Se puede solicitar el alta en los tributos de manera online?",
-      "respuesta": "_",
+      "respuesta": "Actualmente, no es posible pero a la brevedad se implementará esta alternativa. ",
       "fuente": "_"
    },
 
 {
-      "pregunta": "La locación de departamentos y oficinas, ¿está gravado por el Impuesto sobre los Ingresos Brutos?",
-      "respuesta": "_",
+      "pregunta": "La locación de departamentos y oficinas, ¿está gravado por Impuesto sobre los Ingresos Brutos?.",
+      "respuesta": "Si, está alcanzado.",
       "fuente": "_"
    },
-
-{
-      "pregunta": "_",
-      "respuesta": "_",
-      "fuente": "_"
-   },
-
 
    {
-      "pregunta": "_",
-      "respuesta": "_",
-      "fuente": "_"
+      "pregunta": "El saldo a favor en Impuesto sobre los Ingresos Brutos ¿Se puede compensar con otros tributos?",
+      "respuesta": "Dicho saldo en crédito, puede compensarse para deudas o multas en el mismo tributo, es decir IIBB, siempre y cuando cumpla con los requisitos y condiciones al efecto. No es posible compensar con deuda de otros tributos, a excepción de liquidaciones resultantes del Impuesto de Sellos.",
+      "fuente": "R.G. "
    }
 ]
