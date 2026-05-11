@@ -15,21 +15,28 @@
       "respuesta": "Dependiendo del tipo de instrumento como ser Contratos, Orden de provisión, Orden de compra, etc. el trámite del sellado se puede llevar a cabo de dos maneras. Una de forma presencial, asisitiendo el contribuyente con la documentación pertinente o, a través del portal de la ATP, ingresando con cuit y clave fiscal y posteriormente, al webservice Mis Trámites / Sellos Web.",
       "fuente": "Resolución General - 06/2022"
    },
+
 {
-      "pregunta": "¿Qué abono en ATP por la compra de un 0km?",
-      "respuesta": "_",
+	"pregunta": "Al viajar y realizar compras mediante el servicio de Tour de Compras, ¿Qué abono en los Puestos de Control de ATP?",
+	"respuesta": "Se abona en concepto de pago a cuenta de Ingresos Brutos, dependiendo del estado de su Situación Fiscal. Variando así desde un 1% al 3% del valor declarado de compra",
+	"fuente":"R.G."
+},
+
+{
+      "pregunta": "¿Qué se abona en ATP por la compra de un 0km?",
+      "respuesta": "Se paga impuesto de sellos. Para lo cual debe presentar el Formulario F-01 y la factura de compra. En caso de que se encuentre prendado debe también abonar el Formulario F-03.",
       "fuente": "_"
    },
 {
       "pregunta": "¿Se puede solicitar el alta en los tributos de manera online?",
       "respuesta": "Actualmente, no es posible pero a la brevedad se implementará esta alternativa. ",
-      "fuente": "_"
+      "fuente": "R.G."
    },
 
 {
       "pregunta": "La locación de departamentos y oficinas, ¿está gravado por Impuesto sobre los Ingresos Brutos?.",
       "respuesta": "Si, está alcanzado.",
-      "fuente": "_"
+      "fuente": "R.G."
    },
 
    {
