@@ -94,7 +94,25 @@
 }
 
 .lista-respuestas li {
-    margin-bottom: 15px;
+    display: flex;             /* Convierte el li en un contenedor flexible */
+    align-items: center;       /* Centra verticalmente el contenido */
+    margin-bottom: 15px;       /* Mantiene el espacio entre preguntas */
+    list-style: none;
+    }
+
+.lista-respuestas li::before {
+    content: "•";              /* El carácter del punto */
+    color: #333;               /* Color del punto */
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;                /* Espacio fijo para el punto */
+    margin-right: 10px;        /* Separación de la pregunta */
+    flex-shrink: 0;            /* Evita que el punto se achique si el texto es largo */
+}
+
+.lista-respuestas li details {
+    flex-grow: 1;
+    width: 100%;
 }
 
         /* Flecha indicadora personalizada */
@@ -124,7 +142,7 @@
             <span class="subtitle">Lo que necesita saber</span>
         </summary>
         <div class="content">
-            <p>Seleccione su consulta para ver la respuesta:</p>
+            <p>Preguntas más frecuentes:</p>
             
             <!-- LISTA VACÍA: Aquí es donde el script "inyectará" las preguntas -->
             <ul class="lista-respuestas"></ul>
